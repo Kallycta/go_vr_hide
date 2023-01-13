@@ -37,7 +37,7 @@ export default function SearchHeader() {
             className="h-7 text-gray-500 cursor-pointer sm:mr-3"
           />
           <MicrophoneIcon className="h-6 hidden sm:inline-flex text-blue-500 pl-4 border-l-2 border-gray-300 mr-3" />
-          <SearchIcon className="h-6 hidden sm:inline-flex text-blue-500" />
+          <SearchIcon onClick={search} className="h-6 hidden sm:inline-flex text-blue-500 cursor-pointer" />
           <button onClick={search} type="submit" hidden></button>
         </form>
         <User className="ml-auto whitespace-nowrap" />
